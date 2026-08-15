@@ -3,43 +3,1366 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Georgia Papadopoulou | Senior QA Automation Engineer</title>
-<meta name="description" content="Georgia Papadopoulou — Senior QA Automation Engineer providing freelance QA, test automation, API, mobile and regression testing services.">
+
+<meta
+  name="description"
+  content="Georgia Papadopoulou — Senior QA Automation Engineer providing freelance QA, test automation, API, mobile and regression testing services."
+>
+
 <style>
-:root{--bg:#f6f5f1;--surface:#fff;--soft:#fbfaf7;--text:#151515;--muted:#6d6d6a;--line:#e4e2dc;--accent:#111;--radius:18px;--shadow:0 18px 50px rgba(0,0,0,.06)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}a{color:inherit;text-decoration:none}.container{width:min(1120px,calc(100% - 48px));margin:0 auto}
-header{position:sticky;top:0;z-index:100;background:rgba(246,245,241,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(228,226,220,.9)}nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{font-weight:800;letter-spacing:-.025em;font-size:15px}.navlinks{display:flex;gap:28px;font-size:14px;color:#555}.navlinks a{transition:opacity .2s}.navlinks a:hover{opacity:.6}
-.hero{padding:110px 0 100px}.hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:70px;align-items:end}.eyebrow,.section-title{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:800;color:#77746f}.eyebrow{margin-bottom:20px}h1{margin:0;max-width:760px;font-size:clamp(50px,6.2vw,82px);line-height:.98;letter-spacing:-.055em}.hero-copy{max-width:700px;margin:28px 0 34px;color:#55534f;font-size:19px;line-height:1.75}.button{display:inline-flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;min-height:48px;padding:0 20px;border-radius:11px;font-size:14px;font-weight:750;transition:transform .2s,opacity .2s}.button:hover{transform:translateY(-2px);opacity:.9}.hero-note{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}.hero-note strong{display:block;margin-bottom:13px;font-size:15px}.hero-note p{margin:0;color:var(--muted);font-size:14px;line-height:1.8}
-section.content-section{padding:88px 0;border-top:1px solid var(--line)}.section-title{margin-bottom:28px}.section-heading{max-width:700px;margin:0 0 40px;font-size:clamp(30px,4vw,46px);line-height:1.1;letter-spacing:-.04em}
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px;min-height:190px;transition:transform .2s,box-shadow .2s}.service:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.service-index{font-size:11px;color:#96938d;margin-bottom:30px;font-weight:700;letter-spacing:.12em}.service h3{margin:0 0 10px;font-size:19px;letter-spacing:-.02em}.service p{margin:0;color:var(--muted);font-size:14px}
-.case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.case{background:var(--soft);border:1px solid var(--line);border-radius:var(--radius);padding:30px}.case .num{font-size:11px;color:#8e8b85;letter-spacing:.12em;font-weight:700;margin-bottom:30px}.case h3{margin:0 0 10px;font-size:23px;letter-spacing:-.03em}.case p{margin:0;color:var(--muted);font-size:14px}.stack{display:flex;flex-wrap:wrap;gap:10px}.tag{padding:10px 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:13px;font-weight:650}.process{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{background:var(--surface);border:1px solid var(--line);border-radius:15px;padding:24px}.step b{display:block;margin-bottom:9px;font-size:15px}.step span{color:var(--muted);font-size:14px}
-.contact-wrap{padding:86px 0 96px}.contact{background:#121212;color:#fff;border-radius:24px;padding:54px;display:flex;align-items:center;justify-content:space-between;gap:40px}.contact .section-title{color:#9d9d99;margin-bottom:10px}.contact h2{margin:0;font-size:clamp(30px,4vw,46px);letter-spacing:-.04em}.contact p{margin:10px 0 0;color:#b9b9b4}.contact .button{flex:0 0 auto;background:#fff;color:#111}footer{padding:28px 0 44px;border-top:1px solid var(--line)}.footer-inner{display:flex;justify-content:space-between;gap:20px;color:#807d77;font-size:12px}
-@media(max-width:900px){.hero{padding:80px 0}.hero-grid{grid-template-columns:1fr;gap:40px}.hero-note{max-width:620px}.services{grid-template-columns:repeat(2,1fr)}.process{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:650px){.container{width:min(100% - 32px,1120px)}nav{min-height:68px}.navlinks{display:none}.hero{padding:64px 0 68px}h1{font-size:clamp(44px,14vw,64px)}.hero-copy{font-size:17px}section.content-section{padding:68px 0}.services,.case-grid,.process{grid-template-columns:1fr}.contact{padding:34px 26px;display:block}.contact .button{margin-top:24px;width:100%}.footer-inner{flex-direction:column}}
+
+:root{
+  --bg:#f6f5f1;
+  --surface:#ffffff;
+  --surface-soft:#fbfaf7;
+  --text:#151515;
+  --muted:#6d6d6a;
+  --line:#e4e2dc;
+  --accent:#111111;
+  --radius:18px;
+  --shadow:0 18px 50px rgba(0,0,0,.06);
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.container{
+  width:min(1120px, calc(100% - 48px));
+  margin:0 auto;
+}
+
+/* ---------------- NAVIGATION ---------------- */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+
+  background:rgba(246,245,241,.90);
+  backdrop-filter:blur(14px);
+
+  border-bottom:1px solid rgba(228,226,220,.9);
+}
+
+nav{
+  min-height:76px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  gap:24px;
+}
+
+.logo{
+  font-weight:800;
+  letter-spacing:-.025em;
+  font-size:15px;
+}
+
+.navlinks{
+  display:flex;
+  gap:28px;
+
+  font-size:14px;
+  color:#555;
+}
+
+.navlinks a{
+  transition:opacity .2s ease;
+}
+
+.navlinks a:hover{
+  opacity:.55;
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero{
+  padding:110px 0 100px;
+}
+
+.hero-grid{
+  display:grid;
+
+  grid-template-columns:
+    minmax(0,1.35fr)
+    minmax(280px,.65fr);
+
+  gap:70px;
+
+  align-items:end;
+}
+
+.eyebrow,
+.section-title,
+.tech-label{
+  text-transform:uppercase;
+  letter-spacing:.16em;
+
+  font-size:12px;
+  font-weight:800;
+
+  color:#77746f;
+}
+
+.eyebrow{
+  margin-bottom:20px;
+}
+
+h1{
+  margin:0;
+
+  max-width:760px;
+
+  font-size:clamp(50px,6.2vw,82px);
+
+  line-height:.98;
+
+  letter-spacing:-.055em;
+}
+
+.hero-copy{
+  max-width:700px;
+
+  margin:28px 0 34px;
+
+  color:#55534f;
+
+  font-size:19px;
+
+  line-height:1.75;
+}
+
+.button{
+  display:inline-flex;
+
+  align-items:center;
+  justify-content:center;
+
+  min-height:48px;
+
+  padding:0 20px;
+
+  border-radius:11px;
+
+  background:var(--accent);
+  color:#fff;
+
+  font-size:14px;
+  font-weight:750;
+
+  transition:
+    transform .2s ease,
+    opacity .2s ease;
+}
+
+.button:hover{
+  transform:translateY(-2px);
+  opacity:.9;
+}
+
+.hero-note{
+  background:var(--surface);
+
+  border:1px solid var(--line);
+
+  border-radius:var(--radius);
+
+  padding:28px;
+
+  box-shadow:var(--shadow);
+}
+
+.hero-note strong{
+  display:block;
+
+  margin-bottom:13px;
+
+  font-size:15px;
+}
+
+.hero-note p{
+  margin:0;
+
+  color:var(--muted);
+
+  font-size:14px;
+
+  line-height:1.8;
+}
+
+/* ---------------- SECTIONS ---------------- */
+
+.content-section{
+  padding:88px 0;
+
+  border-top:1px solid var(--line);
+}
+
+.section-title{
+  margin-bottom:28px;
+}
+
+.section-heading{
+  max-width:760px;
+
+  margin:0 0 42px;
+
+  font-size:clamp(30px,4vw,46px);
+
+  line-height:1.1;
+
+  letter-spacing:-.04em;
+}
+
+/* ---------------- SERVICES ---------------- */
+
+.services{
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:16px;
+}
+
+.service{
+  min-height:190px;
+
+  padding:28px;
+
+  background:var(--surface);
+
+  border:1px solid var(--line);
+
+  border-radius:16px;
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.service:hover{
+  transform:translateY(-4px);
+
+  box-shadow:var(--shadow);
+}
+
+.service-index{
+  margin-bottom:30px;
+
+  color:#96938d;
+
+  font-size:11px;
+
+  font-weight:700;
+
+  letter-spacing:.12em;
+}
+
+.service h3{
+  margin:0 0 10px;
+
+  font-size:19px;
+
+  letter-spacing:-.02em;
+}
+
+.service p{
+  margin:0;
+
+  color:var(--muted);
+
+  font-size:14px;
+}
+
+/* ---------------- APPROACH ---------------- */
+
+.case-grid{
+  display:grid;
+
+  grid-template-columns:repeat(2,1fr);
+
+  gap:18px;
+}
+
+.case{
+  padding:30px;
+
+  background:var(--surface-soft);
+
+  border:1px solid var(--line);
+
+  border-radius:var(--radius);
+}
+
+.case .num{
+  margin-bottom:30px;
+
+  color:#8e8b85;
+
+  font-size:11px;
+
+  font-weight:700;
+
+  letter-spacing:.12em;
+}
+
+.case h3{
+  margin:0 0 10px;
+
+  font-size:23px;
+
+  letter-spacing:-.03em;
+}
+
+.case p{
+  margin:0;
+
+  color:var(--muted);
+
+  font-size:14px;
+}
+
+/* ---------------- TECH STACK ---------------- */
+
+.tech-grid{
+  display:grid;
+
+  grid-template-columns:repeat(2,1fr);
+
+  gap:18px;
+}
+
+.tech-card{
+  padding:30px;
+
+  background:var(--surface);
+
+  border:1px solid var(--line);
+
+  border-radius:16px;
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.tech-card:hover{
+  transform:translateY(-3px);
+
+  box-shadow:var(--shadow);
+}
+
+.tech-label{
+  display:block;
+
+  margin-bottom:8px;
+
+  font-size:11px;
+}
+
+.tech-card h3{
+  margin:0 0 20px;
+
+  font-size:21px;
+
+  letter-spacing:-.025em;
+}
+
+.stack{
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:9px;
+}
+
+.tag{
+  padding:9px 13px;
+
+  background:var(--surface-soft);
+
+  border:1px solid var(--line);
+
+  border-radius:999px;
+
+  font-size:13px;
+
+  font-weight:650;
+}
+
+/* ---------------- WORKING MODEL ---------------- */
+
+.process{
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:18px;
+}
+
+.step{
+  padding:24px;
+
+  background:var(--surface);
+
+  border:1px solid var(--line);
+
+  border-radius:15px;
+}
+
+.step b{
+  display:block;
+
+  margin-bottom:9px;
+
+  font-size:15px;
+}
+
+.step span{
+  color:var(--muted);
+
+  font-size:14px;
+}
+
+/* ---------------- CONTACT ---------------- */
+
+.contact-wrap{
+  padding:86px 0 96px;
+}
+
+.contact{
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:40px;
+
+  padding:54px;
+
+  background:#121212;
+
+  color:#fff;
+
+  border-radius:24px;
+}
+
+.contact .section-title{
+  margin-bottom:10px;
+
+  color:#9d9d99;
+}
+
+.contact h2{
+  margin:0;
+
+  font-size:clamp(30px,4vw,46px);
+
+  letter-spacing:-.04em;
+}
+
+.contact p{
+  margin:10px 0 0;
+
+  color:#b9b9b4;
+}
+
+.contact .button{
+  flex:0 0 auto;
+
+  background:#fff;
+
+  color:#111;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer{
+  padding:28px 0 44px;
+
+  border-top:1px solid var(--line);
+}
+
+.footer-inner{
+  display:flex;
+
+  justify-content:space-between;
+
+  gap:20px;
+
+  color:#807d77;
+
+  font-size:12px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media(max-width:900px){
+
+  .hero{
+    padding:80px 0;
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr;
+
+    gap:40px;
+  }
+
+  .hero-note{
+    max-width:620px;
+  }
+
+  .services{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .process{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media(max-width:750px){
+
+  .tech-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media(max-width:650px){
+
+  .container{
+    width:min(100% - 32px,1120px);
+  }
+
+  nav{
+    min-height:68px;
+  }
+
+  .navlinks{
+    display:none;
+  }
+
+  .hero{
+    padding:64px 0 68px;
+  }
+
+  h1{
+    font-size:clamp(44px,14vw,64px);
+  }
+
+  .hero-copy{
+    font-size:17px;
+  }
+
+  .content-section{
+    padding:68px 0;
+  }
+
+  .services,
+  .case-grid,
+  .process{
+    grid-template-columns:1fr;
+  }
+
+  .contact{
+    display:block;
+
+    padding:34px 26px;
+  }
+
+  .contact .button{
+    width:100%;
+
+    margin-top:24px;
+  }
+
+  .footer-inner{
+    flex-direction:column;
+  }
+
+}
+
 </style>
 </head>
+
 <body>
-<header><div class="container"><nav><div class="logo">Georgia Papadopoulou</div><div class="navlinks"><a href="#services">Services</a><a href="#work">Approach</a><a href="#stack">Tech</a><a href="#contact">Contact</a></div></nav></div></header>
+
+<header>
+
+  <div class="container">
+
+    <nav>
+
+      <div class="logo">
+        Georgia Papadopoulou
+      </div>
+
+      <div class="navlinks">
+
+        <a href="#services">
+          Services
+        </a>
+
+        <a href="#approach">
+          Approach
+        </a>
+
+        <a href="#stack">
+          Tech Stack
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
+      </div>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
 <main>
-<section class="hero"><div class="container"><div class="hero-grid"><div><div class="eyebrow">Senior QA Automation Engineer · Freelance</div><h1>Quality built into every release.</h1><p class="hero-copy">I help software teams improve QA through structured testing, automation and reliable release validation — from individual projects to ongoing QA support.</p><a class="button" href="#contact">Let's work together</a></div><aside class="hero-note"><strong>Available for project-based collaborations</strong><p>QA Strategy · Test Automation · Regression Testing · API Testing · Mobile Testing</p></aside></div></div></section>
-<section id="services" class="content-section"><div class="container"><div class="section-title">What I can help with</div><h2 class="section-heading">Practical QA support focused on reliable delivery.</h2><div class="services">
-<div class="service"><div class="service-index">01</div><h3>Test Automation</h3><p>Design and implementation of maintainable automated test suites and reusable test components.</p></div>
-<div class="service"><div class="service-index">02</div><h3>Manual & Regression</h3><p>Functional, regression and exploratory testing focused on release confidence and product quality.</p></div>
-<div class="service"><div class="service-index">03</div><h3>QA Strategy</h3><p>Testing processes, priorities and practical QA approaches adapted to the team's needs.</p></div>
-<div class="service"><div class="service-index">04</div><h3>API Testing</h3><p>REST API validation covering functional, integration and negative scenarios.</p></div>
-<div class="service"><div class="service-index">05</div><h3>Mobile Testing</h3><p>Android and iOS testing with a focus on reliable mobile automation using Appium.</p></div>
-<div class="service"><div class="service-index">06</div><h3>Performance Testing</h3><p>Load and performance testing to help teams identify bottlenecks before they affect users.</p></div>
-</div></div></section>
-<section id="work" class="content-section"><div class="container"><div class="section-title">How I approach a project</div><h2 class="section-heading">A structured process from scope to release confidence.</h2><div class="case-grid">
-<div class="case"><div class="num">01 / ASSESS</div><h3>Understand the product</h3><p>Review the application, existing tests, architecture, current QA process and the highest-risk areas before deciding what to automate.</p></div>
-<div class="case"><div class="num">02 / PLAN</div><h3>Define the testing scope</h3><p>Prioritise scenarios, regression coverage and automation opportunities based on business impact and release needs.</p></div>
-<div class="case"><div class="num">03 / BUILD</div><h3>Execute & automate</h3><p>Perform the required testing while building or improving automated checks that provide repeatable value to the team.</p></div>
-<div class="case"><div class="num">04 / REPORT</div><h3>Make quality visible</h3><p>Communicate defects, coverage, findings, risks and progress clearly so the team can make informed release decisions.</p></div>
-</div></div></section>
-<section id="stack" class="content-section"><div class="container"><div class="section-title">Technology</div><h2 class="section-heading">Tools I use across web, mobile, API and performance testing.</h2><div class="stack"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">Robot Framework</span><span class="tag">Playwright</span><span class="tag">Selenium</span><span class="tag">Appium</span><span class="tag">REST APIs</span><span class="tag">Cucumber / BDD</span><span class="tag">Page Object Model</span><span class="tag">Locust</span></div></div></section>
-<section class="content-section"><div class="container"><div class="section-title">Working model</div><div class="process"><div class="step"><b>Scope first</b><span>Understand requirements and deliverables before estimating.</span></div><div class="step"><b>Practical QA</b><span>Focus automation where it creates measurable value.</span></div><div class="step"><b>Clear reporting</b><span>Keep progress, defects and risks visible.</span></div><div class="step"><b>Flexible delivery</b><span>Adapt to the team's workflow and project priorities.</span></div></div></div></section>
-<section id="contact" class="contact-wrap"><div class="container"><div class="contact"><div><div class="section-title">Get in touch</div><h2>Have a QA challenge?</h2><p>Let's discuss your product, scope and testing needs.</p></div><a class="button" href="mailto:g.papadopoulou91@gmail.com">gpapadopoulou.qa@gmail.com</a></div></div></section>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="hero-grid">
+
+      <div>
+
+        <div class="eyebrow">
+          Senior QA Automation Engineer · Freelance
+        </div>
+
+        <h1>
+          Quality built into every release.
+        </h1>
+
+        <p class="hero-copy">
+
+          I help software teams improve software quality through
+          structured testing, test automation and reliable release
+          validation — from individual projects to ongoing QA support.
+
+        </p>
+
+        <a class="button" href="#contact">
+          Let's work together
+        </a>
+
+      </div>
+
+
+      <aside class="hero-note">
+
+        <strong>
+          Available for project-based collaborations
+        </strong>
+
+        <p>
+
+          QA Strategy · Test Automation · Regression Testing ·
+          API Testing · Mobile Testing · Performance Testing
+
+        </p>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services" class="content-section">
+
+  <div class="container">
+
+    <div class="section-title">
+      What I can help with
+    </div>
+
+    <h2 class="section-heading">
+      Practical QA support focused on reliable delivery.
+    </h2>
+
+    <div class="services">
+
+      <div class="service">
+
+        <div class="service-index">
+          01
+        </div>
+
+        <h3>
+          Test Automation
+        </h3>
+
+        <p>
+
+          Design and implementation of maintainable
+          automated test suites and reusable test components.
+
+        </p>
+
+      </div>
+
+
+      <div class="service">
+
+        <div class="service-index">
+          02
+        </div>
+
+        <h3>
+          Manual & Regression
+        </h3>
+
+        <p>
+
+          Functional, regression and exploratory testing
+          focused on release confidence and product quality.
+
+        </p>
+
+      </div>
+
+
+      <div class="service">
+
+        <div class="service-index">
+          03
+        </div>
+
+        <h3>
+          QA Strategy
+        </h3>
+
+        <p>
+
+          Testing processes, priorities and practical QA
+          approaches adapted to the team's needs.
+
+        </p>
+
+      </div>
+
+
+      <div class="service">
+
+        <div class="service-index">
+          04
+        </div>
+
+        <h3>
+          API Testing
+        </h3>
+
+        <p>
+
+          Functional, integration and negative testing
+          of REST and SOAP APIs.
+
+        </p>
+
+      </div>
+
+
+      <div class="service">
+
+        <div class="service-index">
+          05
+        </div>
+
+        <h3>
+          Mobile Testing
+        </h3>
+
+        <p>
+
+          Android and iOS testing with automated
+          mobile test execution.
+
+        </p>
+
+      </div>
+
+
+      <div class="service">
+
+        <div class="service-index">
+          06
+        </div>
+
+        <h3>
+          Performance Testing
+        </h3>
+
+        <p>
+
+          Performance and load testing focused on identifying
+          bottlenecks and application stability issues.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- APPROACH -->
+
+<section id="approach" class="content-section">
+
+  <div class="container">
+
+    <div class="section-title">
+      How I approach a project
+    </div>
+
+    <h2 class="section-heading">
+      A structured process from scope to release confidence.
+    </h2>
+
+
+    <div class="case-grid">
+
+
+      <div class="case">
+
+        <div class="num">
+          01 / ASSESS
+        </div>
+
+        <h3>
+          Understand the product
+        </h3>
+
+        <p>
+
+          Review the application, requirements,
+          existing tests, architecture and current
+          QA process before defining the testing strategy.
+
+        </p>
+
+      </div>
+
+
+      <div class="case">
+
+        <div class="num">
+          02 / PLAN
+        </div>
+
+        <h3>
+          Define the testing scope
+        </h3>
+
+        <p>
+
+          Prioritise test scenarios, regression coverage
+          and automation opportunities based on business
+          impact and release risk.
+
+        </p>
+
+      </div>
+
+
+      <div class="case">
+
+        <div class="num">
+          03 / BUILD
+        </div>
+
+        <h3>
+          Execute & automate
+        </h3>
+
+        <p>
+
+          Perform manual testing while building or improving
+          automated checks that provide repeatable value
+          to the development team.
+
+        </p>
+
+      </div>
+
+
+      <div class="case">
+
+        <div class="num">
+          04 / REPORT
+        </div>
+
+        <h3>
+          Make quality visible
+        </h3>
+
+        <p>
+
+          Clearly communicate defects, test coverage,
+          risks, findings and progress so the team
+          can make informed release decisions.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- TECHNOLOGY -->
+
+<section id="stack" class="content-section">
+
+  <div class="container">
+
+    <div class="section-title">
+      Technology & QA Stack
+    </div>
+
+    <h2 class="section-heading">
+      Tools and technologies I use across the testing lifecycle.
+    </h2>
+
+
+    <div class="tech-grid">
+
+
+      <!-- WEB -->
+
+      <div class="tech-card">
+
+        <span class="tech-label">
+          Web Test Automation
+        </span>
+
+        <h3>
+          Web Applications
+        </h3>
+
+        <div class="stack">
+
+          <span class="tag">
+            Cypress + JavaScript
+          </span>
+
+          <span class="tag">
+            Playwright
+          </span>
+
+          <span class="tag">
+            Selenium
+          </span>
+
+          <span class="tag">
+            Katalon Studio
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- MOBILE -->
+
+      <div class="tech-card">
+
+        <span class="tech-label">
+          Mobile Test Automation
+        </span>
+
+        <h3>
+          Android & iOS
+        </h3>
+
+        <div class="stack">
+
+          <span class="tag">
+            Appium
+          </span>
+
+          <span class="tag">
+            Katalon Studio
+          </span>
+
+          <span class="tag">
+            Sauce Labs
+          </span>
+
+          <span class="tag">
+            Android
+          </span>
+
+          <span class="tag">
+            iOS
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- API -->
+
+      <div class="tech-card">
+
+        <span class="tech-label">
+          API & Backend Testing
+        </span>
+
+        <h3>
+          API Validation
+        </h3>
+
+        <div class="stack">
+
+          <span class="tag">
+            ReadyAPI
+          </span>
+
+          <span class="tag">
+            Postman
+          </span>
+
+          <span class="tag">
+            SoapUI
+          </span>
+
+          <span class="tag">
+            REST APIs
+          </span>
+
+          <span class="tag">
+            FastAPI / Swagger
+          </span>
+
+          <span class="tag">
+            SOAP / WSDL
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- AUTOMATION -->
+
+      <div class="tech-card">
+
+        <span class="tech-label">
+          Automation
+        </span>
+
+        <h3>
+          Frameworks & Languages
+        </h3>
+
+        <div class="stack">
+
+          <span class="tag">
+            Robot Framework + Python
+          </span>
+
+          <span class="tag">
+            Cucumber / BDD
+          </span>
+
+          <span class="tag">
+            Gherkin
+          </span>
+
+          <span class="tag">
+            TestNG
+          </span>
+
+          <span class="tag">
+            Java
+          </span>
+
+          <span class="tag">
+            Groovy
+          </span>
+
+          <span class="tag">
+            JavaScript
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- PERFORMANCE -->
+
+      <div class="tech-card">
+
+        <span class="tech-label">
+          Performance Testing
+        </span>
+
+        <h3>
+          Performance & Load
+        </h3>
+
+        <div class="stack">
+
+          <span class="tag">
+            JMeter
+          </span>
+
+          <span class="tag">
+            Karate Framework
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- CI CD -->
+
+      <div class="tech-card">
+
+        <span class="tech-label">
+          CI/CD & DevOps
+        </span>
+
+        <h3>
+          Continuous Testing
+        </h3>
+
+        <div class="stack">
+
+          <span class="tag">
+            Azure DevOps
+          </span>
+
+          <span class="tag">
+            Jenkins
+          </span>
+
+          <span class="tag">
+            Git
+          </span>
+
+          <span class="tag">
+            GitHub
+          </span>
+
+          <span class="tag">
+            Docker
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WORKING MODEL -->
+
+<section class="content-section">
+
+  <div class="container">
+
+    <div class="section-title">
+      Working Model
+    </div>
+
+
+    <div class="process">
+
+
+      <div class="step">
+
+        <b>
+          Scope first
+        </b>
+
+        <span>
+
+          Understand requirements and deliverables
+          before estimating effort.
+
+        </span>
+
+      </div>
+
+
+      <div class="step">
+
+        <b>
+          Practical QA
+        </b>
+
+        <span>
+
+          Focus automation where it creates
+          measurable value.
+
+        </span>
+
+      </div>
+
+
+      <div class="step">
+
+        <b>
+          Clear reporting
+        </b>
+
+        <span>
+
+          Keep progress, defects and risks
+          visible throughout the project.
+
+        </span>
+
+      </div>
+
+
+      <div class="step">
+
+        <b>
+          Flexible delivery
+        </b>
+
+        <span>
+
+          Adapt to the team's workflow,
+          priorities and project requirements.
+
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact-wrap">
+
+  <div class="container">
+
+    <div class="contact">
+
+      <div>
+
+        <div class="section-title">
+          Get in touch
+        </div>
+
+        <h2>
+          Have a QA challenge?
+        </h2>
+
+        <p>
+          Let's discuss your product, scope and testing needs.
+        </p>
+
+      </div>
+
+
+      <a
+        class="button"
+        href="mailto:g.papadopoulou91@gmail.com"
+      >
+
+        g.papadopoulou91@gmail.com
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
 </main>
-<footer><div class="container footer-inner"><span>© 2026 Georgia Papadopoulou</span><span>Senior QA Automation Engineer</span></div></footer>
+
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <span>
+      © 2026 Georgia Papadopoulou
+    </span>
+
+    <span>
+      Senior QA Automation Engineer
+    </span>
+
+  </div>
+
+</footer>
+
+
 </body>
 </html>
