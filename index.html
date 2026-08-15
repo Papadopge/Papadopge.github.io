@@ -330,6 +330,57 @@ h1{
   grid-column:1 / -1;
 }
 
+
+/* COLLABORATION MODELS */
+
+.collaboration-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.collaboration-card{
+  display:flex;
+  flex-direction:column;
+  min-height:245px;
+  padding:30px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:16px;
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+
+.collaboration-card:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow);
+}
+
+.collaboration-card h3{
+  margin:0 0 14px;
+  font-size:22px;
+  letter-spacing:-.025em;
+}
+
+.collaboration-card p{
+  margin:0 0 26px;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.7;
+}
+
+.collaboration-best{
+  margin-top:auto;
+  padding-top:18px;
+  border-top:1px solid var(--line);
+  color:#77746f;
+  font-size:12px;
+  line-height:1.6;
+}
+
+.collaboration-best strong{
+  color:var(--text);
+}
+
 /* WORKING MODEL */
 
 .process{
@@ -434,6 +485,14 @@ footer{
   .process{
     grid-template-columns:repeat(2,1fr);
   }
+
+  .collaboration-grid{
+    grid-template-columns:1fr;
+  }
+
+  .collaboration-card{
+    min-height:auto;
+  }
 }
 
 @media(max-width:750px){
@@ -514,6 +573,7 @@ footer{
         <a href="#services">Services</a>
         <a href="#approach">Approach</a>
         <a href="#stack">Tech Stack</a>
+        <a href="#collaboration">Work With Me</a>
         <a href="#contact">Contact</a>
       </div>
 
@@ -874,6 +934,62 @@ footer{
 
 </section>
 
+
+<!-- COLLABORATION MODELS -->
+
+<section id="collaboration" class="content-section">
+  <div class="container">
+
+    <div class="section-title">
+      Ways We Can Work Together
+    </div>
+
+    <h2 class="section-heading">
+      Flexible QA support based on your project's needs.
+    </h2>
+
+    <div class="collaboration-grid">
+
+      <div class="collaboration-card">
+        <h3>Project-Based QA</h3>
+        <p>
+          QA support for a specific project, product, feature or release
+          with a clearly defined scope and deliverables.
+        </p>
+        <div class="collaboration-best">
+          <strong>Ideal for:</strong>
+          new projects, releases and defined testing scopes
+        </div>
+      </div>
+
+      <div class="collaboration-card">
+        <h3>Hourly Freelance Support</h3>
+        <p>
+          Flexible QA support billed hourly, allowing the level of
+          involvement to adapt as priorities and testing needs evolve.
+        </p>
+        <div class="collaboration-best">
+          <strong>Ideal for:</strong>
+          flexible or evolving QA requirements
+        </div>
+      </div>
+
+      <div class="collaboration-card">
+        <h3>Ongoing QA Support</h3>
+        <p>
+          Continuous collaboration with your team for testing,
+          automation, regression coverage and release validation.
+        </p>
+        <div class="collaboration-best">
+          <strong>Ideal for:</strong>
+          teams without dedicated QA or needing extra QA capacity
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- WORKING MODEL -->
 
 <section class="content-section">
@@ -946,7 +1062,7 @@ footer{
 
       <a
         class="button"
-        href="mailto:g.papadopoulou91@gmail.com"
+        href="mailto:gpapadopoulou.qa@gmail.com"
       >
         gpapadopoulou.qa@gmail.com
       </a>
