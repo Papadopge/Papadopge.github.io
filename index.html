@@ -12,7 +12,6 @@
 >
 
 <style>
-
 :root{
   --bg:#f6f5f1;
   --surface:#ffffff;
@@ -43,7 +42,6 @@ body{
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
-
   background:var(--bg);
   color:var(--text);
   line-height:1.6;
@@ -59,26 +57,22 @@ a{
   margin:0 auto;
 }
 
-/* ---------------- NAVIGATION ---------------- */
+/* NAVIGATION */
 
 header{
   position:sticky;
   top:0;
   z-index:100;
-
   background:rgba(246,245,241,.90);
   backdrop-filter:blur(14px);
-
   border-bottom:1px solid rgba(228,226,220,.9);
 }
 
 nav{
   min-height:76px;
-
   display:flex;
   align-items:center;
   justify-content:space-between;
-
   gap:24px;
 }
 
@@ -91,7 +85,6 @@ nav{
 .navlinks{
   display:flex;
   gap:28px;
-
   font-size:14px;
   color:#555;
 }
@@ -104,7 +97,7 @@ nav{
   opacity:.55;
 }
 
-/* ---------------- HERO ---------------- */
+/* HERO */
 
 .hero{
   padding:110px 0 100px;
@@ -112,13 +105,8 @@ nav{
 
 .hero-grid{
   display:grid;
-
-  grid-template-columns:
-    minmax(0,1.35fr)
-    minmax(280px,.65fr);
-
+  grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);
   gap:70px;
-
   align-items:end;
 }
 
@@ -127,10 +115,8 @@ nav{
 .tech-label{
   text-transform:uppercase;
   letter-spacing:.16em;
-
   font-size:12px;
   font-weight:800;
-
   color:#77746f;
 }
 
@@ -140,49 +126,32 @@ nav{
 
 h1{
   margin:0;
-
   max-width:760px;
-
   font-size:clamp(50px,6.2vw,82px);
-
   line-height:.98;
-
   letter-spacing:-.055em;
 }
 
 .hero-copy{
   max-width:700px;
-
   margin:28px 0 34px;
-
   color:#55534f;
-
   font-size:19px;
-
   line-height:1.75;
 }
 
 .button{
   display:inline-flex;
-
   align-items:center;
   justify-content:center;
-
   min-height:48px;
-
   padding:0 20px;
-
   border-radius:11px;
-
   background:var(--accent);
   color:#fff;
-
   font-size:14px;
   font-weight:750;
-
-  transition:
-    transform .2s ease,
-    opacity .2s ease;
+  transition:transform .2s ease, opacity .2s ease;
 }
 
 .button:hover{
@@ -192,39 +161,29 @@ h1{
 
 .hero-note{
   background:var(--surface);
-
   border:1px solid var(--line);
-
   border-radius:var(--radius);
-
   padding:28px;
-
   box-shadow:var(--shadow);
 }
 
 .hero-note strong{
   display:block;
-
   margin-bottom:13px;
-
   font-size:15px;
 }
 
 .hero-note p{
   margin:0;
-
   color:var(--muted);
-
   font-size:14px;
-
   line-height:1.8;
 }
 
-/* ---------------- SECTIONS ---------------- */
+/* SECTIONS */
 
 .content-section{
   padding:88px 0;
-
   border-top:1px solid var(--line);
 }
 
@@ -234,227 +193,170 @@ h1{
 
 .section-heading{
   max-width:760px;
-
   margin:0 0 42px;
-
   font-size:clamp(30px,4vw,46px);
-
   line-height:1.1;
-
   letter-spacing:-.04em;
 }
 
-/* ---------------- SERVICES ---------------- */
+/* SERVICES */
 
 .services{
   display:grid;
-
   grid-template-columns:repeat(3,1fr);
-
   gap:16px;
 }
 
 .service{
   min-height:190px;
-
   padding:28px;
-
   background:var(--surface);
-
   border:1px solid var(--line);
-
   border-radius:16px;
-
-  transition:
-    transform .2s ease,
-    box-shadow .2s ease;
+  transition:transform .2s ease, box-shadow .2s ease;
 }
 
 .service:hover{
   transform:translateY(-4px);
-
   box-shadow:var(--shadow);
 }
 
 .service-index{
   margin-bottom:30px;
-
   color:#96938d;
-
   font-size:11px;
-
   font-weight:700;
-
   letter-spacing:.12em;
 }
 
 .service h3{
   margin:0 0 10px;
-
   font-size:19px;
-
   letter-spacing:-.02em;
 }
 
 .service p{
   margin:0;
-
   color:var(--muted);
-
   font-size:14px;
 }
 
-/* ---------------- APPROACH ---------------- */
+/* APPROACH */
 
 .case-grid{
   display:grid;
-
   grid-template-columns:repeat(2,1fr);
-
   gap:18px;
 }
 
 .case{
   padding:30px;
-
   background:var(--surface-soft);
-
   border:1px solid var(--line);
-
   border-radius:var(--radius);
 }
 
 .case .num{
   margin-bottom:30px;
-
   color:#8e8b85;
-
   font-size:11px;
-
   font-weight:700;
-
   letter-spacing:.12em;
 }
 
 .case h3{
   margin:0 0 10px;
-
   font-size:23px;
-
   letter-spacing:-.03em;
 }
 
 .case p{
   margin:0;
-
   color:var(--muted);
-
   font-size:14px;
 }
 
-/* ---------------- TECH STACK ---------------- */
+/* TECHNOLOGY */
 
 .tech-grid{
   display:grid;
-
   grid-template-columns:repeat(2,1fr);
-
   gap:18px;
 }
 
 .tech-card{
   padding:30px;
-
   background:var(--surface);
-
   border:1px solid var(--line);
-
   border-radius:16px;
-
-  transition:
-    transform .2s ease,
-    box-shadow .2s ease;
+  transition:transform .2s ease, box-shadow .2s ease;
 }
 
 .tech-card:hover{
   transform:translateY(-3px);
-
   box-shadow:var(--shadow);
 }
 
 .tech-label{
   display:block;
-
   margin-bottom:8px;
-
   font-size:11px;
 }
 
 .tech-card h3{
   margin:0 0 20px;
-
   font-size:21px;
-
   letter-spacing:-.025em;
 }
 
 .stack{
   display:flex;
-
   flex-wrap:wrap;
-
   gap:9px;
 }
 
 .tag{
   padding:9px 13px;
-
   background:var(--surface-soft);
-
   border:1px solid var(--line);
-
   border-radius:999px;
-
   font-size:13px;
-
   font-weight:650;
 }
 
-/* ---------------- WORKING MODEL ---------------- */
+/* Last tech card uses full width */
+
+.tech-card:last-child{
+  grid-column:1 / -1;
+}
+
+/* WORKING MODEL */
 
 .process{
   display:grid;
-
   grid-template-columns:repeat(4,1fr);
-
   gap:18px;
 }
 
 .step{
   padding:24px;
-
   background:var(--surface);
-
   border:1px solid var(--line);
-
   border-radius:15px;
 }
 
 .step b{
   display:block;
-
   margin-bottom:9px;
-
   font-size:15px;
 }
 
 .step span{
   color:var(--muted);
-
   font-size:14px;
 }
 
-/* ---------------- CONTACT ---------------- */
+/* CONTACT */
 
 .contact-wrap{
   padding:86px 0 96px;
@@ -462,71 +364,53 @@ h1{
 
 .contact{
   display:flex;
-
   align-items:center;
-
   justify-content:space-between;
-
   gap:40px;
-
   padding:54px;
-
   background:#121212;
-
   color:#fff;
-
   border-radius:24px;
 }
 
 .contact .section-title{
   margin-bottom:10px;
-
   color:#9d9d99;
 }
 
 .contact h2{
   margin:0;
-
   font-size:clamp(30px,4vw,46px);
-
   letter-spacing:-.04em;
 }
 
 .contact p{
   margin:10px 0 0;
-
   color:#b9b9b4;
 }
 
 .contact .button{
   flex:0 0 auto;
-
   background:#fff;
-
   color:#111;
 }
 
-/* ---------------- FOOTER ---------------- */
+/* FOOTER */
 
 footer{
   padding:28px 0 44px;
-
   border-top:1px solid var(--line);
 }
 
 .footer-inner{
   display:flex;
-
   justify-content:space-between;
-
   gap:20px;
-
   color:#807d77;
-
   font-size:12px;
 }
 
-/* ---------------- RESPONSIVE ---------------- */
+/* RESPONSIVE */
 
 @media(max-width:900px){
 
@@ -536,7 +420,6 @@ footer{
 
   .hero-grid{
     grid-template-columns:1fr;
-
     gap:40px;
   }
 
@@ -551,7 +434,6 @@ footer{
   .process{
     grid-template-columns:repeat(2,1fr);
   }
-
 }
 
 @media(max-width:750px){
@@ -560,6 +442,9 @@ footer{
     grid-template-columns:1fr;
   }
 
+  .tech-card:last-child{
+    grid-column:auto;
+  }
 }
 
 @media(max-width:650px){
@@ -600,31 +485,25 @@ footer{
 
   .contact{
     display:block;
-
     padding:34px 26px;
   }
 
   .contact .button{
     width:100%;
-
     margin-top:24px;
   }
 
   .footer-inner{
     flex-direction:column;
   }
-
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-
   <div class="container">
-
     <nav>
 
       <div class="logo">
@@ -632,31 +511,15 @@ footer{
       </div>
 
       <div class="navlinks">
-
-        <a href="#services">
-          Services
-        </a>
-
-        <a href="#approach">
-          Approach
-        </a>
-
-        <a href="#stack">
-          Tech Stack
-        </a>
-
-        <a href="#contact">
-          Contact
-        </a>
-
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#stack">Tech Stack</a>
+        <a href="#contact">Contact</a>
       </div>
 
     </nav>
-
   </div>
-
 </header>
-
 
 <main>
 
@@ -679,11 +542,9 @@ footer{
         </h1>
 
         <p class="hero-copy">
-
           I help software teams improve software quality through
           structured testing, test automation and reliable release
           validation — from individual projects to ongoing QA support.
-
         </p>
 
         <a class="button" href="#contact">
@@ -692,7 +553,6 @@ footer{
 
       </div>
 
-
       <aside class="hero-note">
 
         <strong>
@@ -700,10 +560,8 @@ footer{
         </strong>
 
         <p>
-
           QA Strategy · Test Automation · Regression Testing ·
           API Testing · Mobile Testing · Performance Testing
-
         </p>
 
       </aside>
@@ -713,7 +571,6 @@ footer{
   </div>
 
 </section>
-
 
 <!-- SERVICES -->
 
@@ -732,122 +589,57 @@ footer{
     <div class="services">
 
       <div class="service">
-
-        <div class="service-index">
-          01
-        </div>
-
-        <h3>
-          Test Automation
-        </h3>
-
+        <div class="service-index">01</div>
+        <h3>Test Automation</h3>
         <p>
-
-          Design and implementation of maintainable
-          automated test suites and reusable test components.
-
+          Design and implementation of maintainable automated
+          test suites and reusable test components.
         </p>
-
       </div>
 
-
       <div class="service">
-
-        <div class="service-index">
-          02
-        </div>
-
-        <h3>
-          Manual & Regression
-        </h3>
-
+        <div class="service-index">02</div>
+        <h3>Manual & Regression</h3>
         <p>
-
-          Functional, regression and exploratory testing
-          focused on release confidence and product quality.
-
+          Functional, regression and exploratory testing focused
+          on release confidence and product quality.
         </p>
-
       </div>
 
-
       <div class="service">
-
-        <div class="service-index">
-          03
-        </div>
-
-        <h3>
-          QA Strategy
-        </h3>
-
+        <div class="service-index">03</div>
+        <h3>QA Strategy</h3>
         <p>
-
           Testing processes, priorities and practical QA
           approaches adapted to the team's needs.
-
         </p>
-
       </div>
 
-
       <div class="service">
-
-        <div class="service-index">
-          04
-        </div>
-
-        <h3>
-          API Testing
-        </h3>
-
+        <div class="service-index">04</div>
+        <h3>API Testing</h3>
         <p>
-
           Functional, integration and negative testing
           of REST and SOAP APIs.
-
         </p>
-
       </div>
 
-
       <div class="service">
-
-        <div class="service-index">
-          05
-        </div>
-
-        <h3>
-          Mobile Testing
-        </h3>
-
+        <div class="service-index">05</div>
+        <h3>Mobile Testing</h3>
         <p>
-
-          Android and iOS testing with automated
-          mobile test execution.
-
+          Mobile application testing with a focus on
+          reliable functional and automated validation.
         </p>
-
       </div>
 
-
       <div class="service">
-
-        <div class="service-index">
-          06
-        </div>
-
-        <h3>
-          Performance Testing
-        </h3>
-
+        <div class="service-index">06</div>
+        <h3>Performance Testing</h3>
         <p>
-
           Performance and load testing focused on identifying
           bottlenecks and application stability issues.
-
         </p>
-
       </div>
 
     </div>
@@ -855,7 +647,6 @@ footer{
   </div>
 
 </section>
-
 
 <!-- APPROACH -->
 
@@ -871,91 +662,54 @@ footer{
       A structured process from scope to release confidence.
     </h2>
 
-
     <div class="case-grid">
 
-
       <div class="case">
+        <div class="num">01 / ASSESS</div>
 
-        <div class="num">
-          01 / ASSESS
-        </div>
-
-        <h3>
-          Understand the product
-        </h3>
+        <h3>Understand the product</h3>
 
         <p>
-
-          Review the application, requirements,
-          existing tests, architecture and current
-          QA process before defining the testing strategy.
-
+          Review the application, requirements, existing tests,
+          architecture and current QA process before defining
+          the testing strategy.
         </p>
-
       </div>
 
-
       <div class="case">
+        <div class="num">02 / PLAN</div>
 
-        <div class="num">
-          02 / PLAN
-        </div>
-
-        <h3>
-          Define the testing scope
-        </h3>
+        <h3>Define the testing scope</h3>
 
         <p>
-
-          Prioritise test scenarios, regression coverage
-          and automation opportunities based on business
-          impact and release risk.
-
+          Prioritise test scenarios, regression coverage and
+          automation opportunities based on business impact
+          and release risk.
         </p>
-
       </div>
 
-
       <div class="case">
+        <div class="num">03 / BUILD</div>
 
-        <div class="num">
-          03 / BUILD
-        </div>
-
-        <h3>
-          Execute & automate
-        </h3>
+        <h3>Execute & automate</h3>
 
         <p>
-
           Perform manual testing while building or improving
           automated checks that provide repeatable value
           to the development team.
-
         </p>
-
       </div>
 
-
       <div class="case">
+        <div class="num">04 / REPORT</div>
 
-        <div class="num">
-          04 / REPORT
-        </div>
-
-        <h3>
-          Make quality visible
-        </h3>
+        <h3>Make quality visible</h3>
 
         <p>
-
-          Clearly communicate defects, test coverage,
-          risks, findings and progress so the team
-          can make informed release decisions.
-
+          Clearly communicate defects, test coverage, risks,
+          findings and progress so the team can make informed
+          release decisions.
         </p>
-
       </div>
 
     </div>
@@ -963,7 +717,6 @@ footer{
   </div>
 
 </section>
-
 
 <!-- TECHNOLOGY -->
 
@@ -976,86 +729,72 @@ footer{
     </div>
 
     <h2 class="section-heading">
-      Tools and technologies I use across the testing lifecycle.
+      Tools, frameworks and technologies I use across the testing lifecycle.
     </h2>
-
 
     <div class="tech-grid">
 
-
-      <!-- WEB -->
+      <!-- AUTOMATION -->
 
       <div class="tech-card">
 
         <span class="tech-label">
-          Web Test Automation
+          Automation Frameworks & Tools
         </span>
 
-        <h3>
-          Web Applications
-        </h3>
+        <h3>Test Automation</h3>
 
         <div class="stack">
-
-          <span class="tag">
-            Cypress + JavaScript
-          </span>
-
-          <span class="tag">
-            Playwright
-          </span>
-
-          <span class="tag">
-            Selenium
-          </span>
-
-          <span class="tag">
-            Katalon Studio
-          </span>
-
+          <span class="tag">Cypress</span>
+          <span class="tag">Playwright</span>
+          <span class="tag">Selenium</span>
+          <span class="tag">Robot Framework</span>
+          <span class="tag">Katalon Studio</span>
+          <span class="tag">Appium</span>
+          <span class="tag">Cucumber / BDD</span>
+          <span class="tag">TestNG</span>
         </div>
 
       </div>
 
+      <!-- PROGRAMMING LANGUAGES -->
+
+      <div class="tech-card">
+
+        <span class="tech-label">
+          Programming Languages
+        </span>
+
+        <h3>Languages & Scripting</h3>
+
+        <div class="stack">
+          <span class="tag">Java</span>
+          <span class="tag">Python</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Groovy</span>
+          <span class="tag">C#</span>
+          <span class="tag">PHP</span>
+        </div>
+
+      </div>
 
       <!-- MOBILE -->
 
       <div class="tech-card">
 
         <span class="tech-label">
-          Mobile Test Automation
+          Mobile Testing
         </span>
 
-        <h3>
-          Android & iOS
-        </h3>
+        <h3>Mobile Test Automation</h3>
 
         <div class="stack">
-
-          <span class="tag">
-            Appium
-          </span>
-
-          <span class="tag">
-            Katalon Studio
-          </span>
-
-          <span class="tag">
-            Sauce Labs
-          </span>
-
-          <span class="tag">
-            Android
-          </span>
-
-          <span class="tag">
-            iOS
-          </span>
-
+          <span class="tag">Appium</span>
+          <span class="tag">Katalon Studio</span>
+          <span class="tag">Sauce Labs</span>
         </div>
 
       </div>
-
 
       <!-- API -->
 
@@ -1065,87 +804,18 @@ footer{
           API & Backend Testing
         </span>
 
-        <h3>
-          API Validation
-        </h3>
+        <h3>API Validation</h3>
 
         <div class="stack">
-
-          <span class="tag">
-            ReadyAPI
-          </span>
-
-          <span class="tag">
-            Postman
-          </span>
-
-          <span class="tag">
-            SoapUI
-          </span>
-
-          <span class="tag">
-            REST APIs
-          </span>
-
-          <span class="tag">
-            FastAPI / Swagger
-          </span>
-
-          <span class="tag">
-            SOAP / WSDL
-          </span>
-
+          <span class="tag">ReadyAPI</span>
+          <span class="tag">Postman</span>
+          <span class="tag">SoapUI</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">FastAPI / Swagger</span>
+          <span class="tag">SOAP / WSDL</span>
         </div>
 
       </div>
-
-
-      <!-- AUTOMATION -->
-
-      <div class="tech-card">
-
-        <span class="tech-label">
-          Automation
-        </span>
-
-        <h3>
-          Frameworks & Languages
-        </h3>
-
-        <div class="stack">
-
-          <span class="tag">
-            Robot Framework + Python
-          </span>
-
-          <span class="tag">
-            Cucumber / BDD
-          </span>
-
-          <span class="tag">
-            Gherkin
-          </span>
-
-          <span class="tag">
-            TestNG
-          </span>
-
-          <span class="tag">
-            Java
-          </span>
-
-          <span class="tag">
-            Groovy
-          </span>
-
-          <span class="tag">
-            JavaScript
-          </span>
-
-        </div>
-
-      </div>
-
 
       <!-- PERFORMANCE -->
 
@@ -1155,26 +825,16 @@ footer{
           Performance Testing
         </span>
 
-        <h3>
-          Performance & Load
-        </h3>
+        <h3>Performance & Load</h3>
 
         <div class="stack">
-
-          <span class="tag">
-            JMeter
-          </span>
-
-          <span class="tag">
-            Karate Framework
-          </span>
-
+          <span class="tag">JMeter</span>
+          <span class="tag">Karate Framework</span>
         </div>
 
       </div>
 
-
-      <!-- CI CD -->
+      <!-- CI/CD -->
 
       <div class="tech-card">
 
@@ -1182,32 +842,32 @@ footer{
           CI/CD & DevOps
         </span>
 
-        <h3>
-          Continuous Testing
-        </h3>
+        <h3>Continuous Testing</h3>
 
         <div class="stack">
+          <span class="tag">Azure DevOps</span>
+          <span class="tag">Jenkins</span>
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">Docker</span>
+        </div>
 
-          <span class="tag">
-            Azure DevOps
-          </span>
+      </div>
 
-          <span class="tag">
-            Jenkins
-          </span>
+      <!-- TEST MANAGEMENT -->
 
-          <span class="tag">
-            Git
-          </span>
+      <div class="tech-card">
 
-          <span class="tag">
-            GitHub
-          </span>
+        <span class="tech-label">
+          Test Management
+        </span>
 
-          <span class="tag">
-            Docker
-          </span>
+        <h3>Planning & Defect Tracking</h3>
 
+        <div class="stack">
+          <span class="tag">JIRA</span>
+          <span class="tag">Azure DevOps</span>
+          <span class="tag">Axosoft</span>
         </div>
 
       </div>
@@ -1217,7 +877,6 @@ footer{
   </div>
 
 </section>
-
 
 <!-- WORKING MODEL -->
 
@@ -1229,71 +888,34 @@ footer{
       Working Model
     </div>
 
-
     <div class="process">
 
-
       <div class="step">
-
-        <b>
-          Scope first
-        </b>
-
+        <b>Scope first</b>
         <span>
-
-          Understand requirements and deliverables
-          before estimating effort.
-
+          Understand requirements and deliverables before estimating effort.
         </span>
-
       </div>
 
-
       <div class="step">
-
-        <b>
-          Practical QA
-        </b>
-
+        <b>Practical QA</b>
         <span>
-
-          Focus automation where it creates
-          measurable value.
-
+          Focus automation where it creates measurable value.
         </span>
-
       </div>
 
-
       <div class="step">
-
-        <b>
-          Clear reporting
-        </b>
-
+        <b>Clear reporting</b>
         <span>
-
-          Keep progress, defects and risks
-          visible throughout the project.
-
+          Keep progress, defects and risks visible throughout the project.
         </span>
-
       </div>
 
-
       <div class="step">
-
-        <b>
-          Flexible delivery
-        </b>
-
+        <b>Flexible delivery</b>
         <span>
-
-          Adapt to the team's workflow,
-          priorities and project requirements.
-
+          Adapt to the team's workflow, priorities and project requirements.
         </span>
-
       </div>
 
     </div>
@@ -1301,7 +923,6 @@ footer{
   </div>
 
 </section>
-
 
 <!-- CONTACT -->
 
@@ -1327,14 +948,11 @@ footer{
 
       </div>
 
-
       <a
         class="button"
         href="mailto:g.papadopoulou91@gmail.com"
       >
-
-        g.papadopoulou91@gmail.com
-
+        gpapadopoulou.qa@gmail.com
       </a>
 
     </div>
@@ -1343,9 +961,7 @@ footer{
 
 </section>
 
-
 </main>
-
 
 <footer>
 
@@ -1362,7 +978,6 @@ footer{
   </div>
 
 </footer>
-
 
 </body>
 </html>
