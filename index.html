@@ -276,6 +276,41 @@ h1{
   font-size:14px;
 }
 
+
+/* INDUSTRY EXPERIENCE */
+
+.industry-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.industry-card{
+  padding:30px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:16px;
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+
+.industry-card:hover{
+  transform:translateY(-3px);
+  box-shadow:var(--shadow);
+}
+
+.industry-card h3{
+  margin:0 0 10px;
+  font-size:20px;
+  letter-spacing:-.025em;
+}
+
+.industry-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.7;
+}
+
 /* TECHNOLOGY */
 
 .tech-grid{
@@ -482,6 +517,10 @@ footer{
     grid-template-columns:repeat(2,1fr);
   }
 
+  .industry-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
   .process{
     grid-template-columns:repeat(2,1fr);
   }
@@ -538,6 +577,7 @@ footer{
 
   .services,
   .case-grid,
+  .industry-grid,
   .process{
     grid-template-columns:1fr;
   }
@@ -572,6 +612,7 @@ footer{
       <div class="navlinks">
         <a href="#services">Services</a>
         <a href="#approach">Approach</a>
+        <a href="#industries">Industries</a>
         <a href="#stack">Tech Stack</a>
         <a href="#collaboration">Work With Me</a>
         <a href="#contact">Contact</a>
@@ -756,6 +797,77 @@ footer{
           Clearly communicate defects, test coverage, risks,
           findings and progress so the team can make informed
           release decisions.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- INDUSTRY EXPERIENCE -->
+
+<section id="industries" class="content-section">
+
+  <div class="container">
+
+    <div class="section-title">
+      Industry Experience
+    </div>
+
+    <h2 class="section-heading">
+      Experience across different products and business domains.
+    </h2>
+
+    <div class="industry-grid">
+
+      <div class="industry-card">
+        <h3>Banking & Financial Services</h3>
+        <p>
+          QA and test automation experience across banking platforms,
+          APIs, mobile applications and business-critical financial workflows.
+        </p>
+      </div>
+
+      <div class="industry-card">
+        <h3>Healthcare & Medical Software</h3>
+        <p>
+          Quality assurance experience supporting healthcare-focused
+          applications and complex user workflows.
+        </p>
+      </div>
+
+      <div class="industry-card">
+        <h3>AdTech & Digital Advertising</h3>
+        <p>
+          Testing experience across digital advertising products,
+          integrations and data-driven functionality.
+        </p>
+      </div>
+
+      <div class="industry-card">
+        <h3>Enterprise & Business Software</h3>
+        <p>
+          QA across business-critical applications, backend services,
+          integrations and software used by professional users.
+        </p>
+      </div>
+
+      <div class="industry-card">
+        <h3>Web Applications</h3>
+        <p>
+          Functional, regression and automated testing across modern
+          browser-based products and cross-browser environments.
+        </p>
+      </div>
+
+      <div class="industry-card">
+        <h3>Mobile Applications</h3>
+        <p>
+          Functional and automated testing of mobile products,
+          including end-to-end validation and cloud-based test execution.
         </p>
       </div>
 
