@@ -311,6 +311,104 @@ h1{
   line-height:1.7;
 }
 
+
+/* SELECTED PROJECTS */
+
+.project-card{
+  padding:36px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+
+.project-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:30px;
+}
+
+.project-type{
+  display:inline-block;
+  margin-bottom:14px;
+  color:#77746f;
+  font-size:11px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+}
+
+.project-card h3{
+  margin:0 0 14px;
+  font-size:28px;
+  letter-spacing:-.035em;
+}
+
+.project-description{
+  max-width:720px;
+  margin:0;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.75;
+}
+
+.project-stats{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin:28px 0;
+}
+
+.project-stat{
+  padding:12px 16px;
+  background:var(--surface-soft);
+  border:1px solid var(--line);
+  border-radius:12px;
+  font-size:13px;
+  font-weight:650;
+}
+
+.project-details{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  padding-top:26px;
+  border-top:1px solid var(--line);
+}
+
+.project-details h4{
+  margin:0 0 12px;
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+}
+
+.project-details p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.8;
+}
+
+.project-actions{
+  margin-top:30px;
+}
+
+.project-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+  font-weight:750;
+  padding-bottom:4px;
+  border-bottom:1px solid var(--text);
+}
+
+.project-link:hover{
+  opacity:.6;
+}
+
 /* TECHNOLOGY */
 
 .tech-grid{
@@ -582,6 +680,14 @@ footer{
     grid-template-columns:1fr;
   }
 
+  .project-details{
+    grid-template-columns:1fr;
+  }
+
+  .project-card{
+    padding:26px;
+  }
+
   .contact{
     display:block;
     padding:34px 26px;
@@ -613,6 +719,7 @@ footer{
         <a href="#services">Services</a>
         <a href="#approach">Approach</a>
         <a href="#industries">Industries</a>
+        <a href="#projects">Projects</a>
         <a href="#stack">Tech Stack</a>
         <a href="#collaboration">Work With Me</a>
         <a href="#contact">Contact</a>
@@ -869,6 +976,115 @@ footer{
           Functional and automated testing of mobile products,
           including end-to-end validation and cloud-based test execution.
         </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SELECTED PROJECTS -->
+
+<section id="projects" class="content-section">
+
+  <div class="container">
+
+    <div class="section-title">
+      Selected QA Projects
+    </div>
+
+    <h2 class="section-heading">
+      Practical examples of my approach to quality engineering and test automation.
+    </h2>
+
+    <div class="project-card">
+
+      <div class="project-top">
+
+        <div>
+
+          <span class="project-type">
+            Portfolio Project · E-commerce
+          </span>
+
+          <h3>
+            E-commerce Test Automation
+          </h3>
+
+          <p class="project-description">
+            End-to-end automated regression suite for a demo e-commerce
+            application, designed to demonstrate a structured approach to
+            browser automation, business-flow validation and regression testing.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="project-stats">
+
+        <div class="project-stat">
+          Playwright
+        </div>
+
+        <div class="project-stat">
+          JavaScript
+        </div>
+
+        <div class="project-stat">
+          8 Automated E2E Scenarios
+        </div>
+
+        <div class="project-stat">
+          HTML Reporting
+        </div>
+
+      </div>
+
+      <div class="project-details">
+
+        <div>
+
+          <h4>
+            Test Coverage
+          </h4>
+
+          <p>
+            Authentication · Product Search · Category Filtering ·
+            Cart Management · Form Validation · Checkout
+          </p>
+
+        </div>
+
+        <div>
+
+          <h4>
+            QA & Automation Approach
+          </h4>
+
+          <p>
+            Positive & negative scenarios · Stable test locators ·
+            End-to-end regression coverage · Screenshots · Video ·
+            Playwright traces for failure investigation
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="project-actions">
+
+        <a
+          class="project-link"
+          href="https://github.com/Papadopge/ecommerce-qa-automation-demo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Project on GitHub →
+        </a>
+
       </div>
 
     </div>
