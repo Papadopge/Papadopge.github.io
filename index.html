@@ -413,6 +413,68 @@ h1{
   opacity:.6;
 }
 
+
+/* FULL-STACK DEVELOPMENT PROJECTS */
+
+.dev-project-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.dev-project-card{
+  display:flex;
+  flex-direction:column;
+  padding:28px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+
+.dev-project-card:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow);
+}
+
+.dev-project-card h3{
+  margin:10px 0 10px;
+  font-size:22px;
+  letter-spacing:-.03em;
+}
+
+.dev-project-card p{
+  margin:0 0 18px;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.7;
+}
+
+.dev-project-stack{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:4px 0 22px;
+}
+
+.dev-project-stack span{
+  padding:7px 10px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:var(--surface-soft);
+  font-size:12px;
+  font-weight:650;
+}
+
+.dev-project-card .project-link{
+  margin-top:auto;
+  align-self:flex-start;
+}
+
+@media(max-width:900px){
+  .dev-project-grid{grid-template-columns:1fr;}
+}
+
 /* TECHNOLOGY */
 
 .tech-grid{
@@ -723,7 +785,8 @@ footer{
         <a href="#services">Services</a>
         <a href="#approach">Approach</a>
         <a href="#industries">Industries</a>
-        <a href="#projects">Projects</a>
+        <a href="#projects">QA Projects</a>
+        <a href="#development-projects">Development</a>
         <a href="#stack">Tech Stack</a>
         <a href="#collaboration">Work With Me</a>
         <a href="#contact">Contact</a>
@@ -1191,46 +1254,87 @@ footer{
 
 
     <div class="project-card">
+
       <div class="project-top">
+
         <div>
-          <span class="project-type">Portfolio Project · Mobile Automation</span>
-          <h3>Mobile App Test Automation</h3>
+
+          <span class="project-type">
+            Portfolio Project · Mobile Automation
+          </span>
+
+          <h3>
+            Mobile App Test Automation
+          </h3>
+
           <p class="project-description">
-            Native Android test automation project demonstrating end-to-end
-            mobile validation using Appium, Java, TestNG and UiAutomator2,
-            with reusable page objects, explicit waits and emulator-based execution.
+            Native Android automation framework demonstrating end-to-end
+            mobile testing using Appium, Java, TestNG and UiAutomator2,
+            with reusable page objects and explicit waits.
           </p>
+
         </div>
+
       </div>
 
       <div class="project-stats">
-        <div class="project-stat">Appium</div>
-        <div class="project-stat">Java</div>
-        <div class="project-stat">TestNG</div>
-        <div class="project-stat">UiAutomator2</div>
-        <div class="project-stat">Maven</div>
+
+        <div class="project-stat">
+          Appium
+        </div>
+
+        <div class="project-stat">
+          Java
+        </div>
+
+        <div class="project-stat">
+          TestNG
+        </div>
+
+        <div class="project-stat">
+          UiAutomator2
+        </div>
+
+        <div class="project-stat">
+          Maven
+        </div>
+
       </div>
 
       <div class="project-details">
+
         <div>
-          <h4>Test Coverage</h4>
+
+          <h4>
+            Test Coverage
+          </h4>
+
           <p>
-            Authentication · Credential validation · Product selection ·
-            Cart management · Checkout information · Checkout overview
+            Valid login · Credential validation · Product selection ·
+            Cart navigation · Checkout customer information ·
+            Checkout overview
           </p>
+
         </div>
 
         <div>
-          <h4>QA & Automation Approach</h4>
+
+          <h4>
+            QA & Automation Approach
+          </h4>
+
           <p>
             Page Object Model · Explicit waits · Accessibility ID locators ·
-            Reusable AndroidDriver setup · Native Android automation ·
-            Emulator execution · Regression-ready test structure
+            Reusable driver setup · Android emulator execution ·
+            Native mobile regression coverage
           </p>
+
         </div>
+
       </div>
 
       <div class="project-actions">
+
         <a
           class="project-link"
           href="https://github.com/Papadopge/mobile-appium-java-automation-demo"
@@ -1239,11 +1343,85 @@ footer{
         >
           View Project on GitHub →
         </a>
+
       </div>
+
     </div>
 
   </div>
 
+</section>
+
+
+<!-- FULL-STACK DEVELOPMENT PROJECTS -->
+
+<section id="development-projects" class="content-section">
+  <div class="container">
+
+    <div class="section-title">
+      Full-Stack Development Projects
+    </div>
+
+    <h2 class="section-heading">
+      Independent development projects showcasing end-to-end application delivery.
+    </h2>
+
+    <div class="dev-project-grid">
+
+      <div class="dev-project-card">
+        <span class="project-type">Development Portfolio Project · SaaS</span>
+        <h3>FlowBoard Business Management</h3>
+        <p>
+          Business management dashboard for projects, clients and task delivery,
+          with a React/TypeScript frontend connected to a Python FastAPI backend.
+        </p>
+        <div class="dev-project-stack">
+          <span>React</span><span>TypeScript</span><span>FastAPI</span><span>Python</span><span>REST API</span>
+        </div>
+        <a class="project-link"
+           href="https://github.com/Papadopge/flowboard-business-management-saas"
+           target="_blank" rel="noopener noreferrer">
+          View Project on GitHub →
+        </a>
+      </div>
+
+      <div class="dev-project-card">
+        <span class="project-type">Development Portfolio Project · Booking</span>
+        <h3>Slotly Appointment System</h3>
+        <p>
+          Full-stack scheduling application with appointment creation,
+          server-side slot conflict validation and an upcoming-bookings dashboard.
+        </p>
+        <div class="dev-project-stack">
+          <span>React</span><span>TypeScript</span><span>FastAPI</span><span>Python</span><span>Validation</span>
+        </div>
+        <a class="project-link"
+           href="https://github.com/Papadopge/slotly-booking-system"
+           target="_blank" rel="noopener noreferrer">
+          View Project on GitHub →
+        </a>
+      </div>
+
+      <div class="dev-project-card">
+        <span class="project-type">Development Portfolio Project · Automation</span>
+        <h3>TicketPilot Workflow SaaS</h3>
+        <p>
+          SaaS-style support workflow that converts incoming ticket text into
+          structured category, priority and recommended-action data through a backend analysis service.
+        </p>
+        <div class="dev-project-stack">
+          <span>React</span><span>TypeScript</span><span>FastAPI</span><span>Python</span><span>Automation</span>
+        </div>
+        <a class="project-link"
+           href="https://github.com/Papadopge/ticketpilot-ai-workflow-saas"
+           target="_blank" rel="noopener noreferrer">
+          View Project on GitHub →
+        </a>
+      </div>
+
+    </div>
+
+  </div>
 </section>
 
 <!-- TECHNOLOGY -->
